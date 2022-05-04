@@ -1015,7 +1015,7 @@ p.footer-about{
 	width: 100%;
 	height:100%;
 	background-image: url(../images/header-section.png);
-	background-position: cover;
+	background-size: cover;
 	height:100vh;
 }
 .logo-section img{
@@ -1805,6 +1805,9 @@ p.mainheading{
 		font-size: 0.9rem;
 		line-height: 1.5;
 	}
+	.secondimg{
+		display:none;
+	}
 
  }
 
@@ -1879,6 +1882,19 @@ p.mainheading{
 display: flex;
 flex-direction: column;
 align-items: center;
+  }
+  p.topheading {
+	max-width: 540px;
+	width: 100%;
+	font-size: 250%;
+	line-height: 1;
+	
+  }
+  p.mainheading {
+	font-size: 150%;
+	font-weight: 400;
+	color: #fff;
+	padding: 50px 0;
   }
 
 }
@@ -2134,6 +2150,17 @@ align-items: center;
 		content:'';   
 		border-left: solid 10px #00B199;
 	}
+
+	p.topheading{
+		font-size: 250%;
+		line-height: 1.3;
+	}
+	p.mainheading {
+		font-size: 20px;
+		font-weight: 400;
+		color: #fff;
+		padding: 50px 0;
+	  }
 	
 }
 
