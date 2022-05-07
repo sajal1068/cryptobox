@@ -1131,7 +1131,10 @@ p.mainheading{
     border-radius: 0.25rem;
   
 }
-
+.calculater select option {
+	background-color: #FFAE00 !important;
+	padding:5px 0;
+  }
 
 .demo-3 {
 	--color-text: #fbd54a;
@@ -1950,9 +1953,9 @@ align-items: center;
 	top:-1px;
 }
 
-.banner{	
+/* .banner{	
 	height:100vh;
-}
+} */
 
 }
 
@@ -2223,9 +2226,8 @@ align-items: center;
 		padding: 50px 0;
 	  }
 	  .banner{
-		height:100vh;
-	
-	}
+		padding-bottom: 50px;	
+	  }
 	
 }
 
