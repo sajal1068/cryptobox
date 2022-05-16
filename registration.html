@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
+
+    <title></title>
+  </head>
+  <body class="bg-login"> 
+      <main class="d-flex h-100 align-items-center">
+          <div class="container">
+              <div class="row ">
+                  <div class="col-sm-12">
+
+                    <section class="registration">
+                        <aside class="">
+                            <p class="font-24 w-100 text-center">Welcome</p>
+                            <img src="assets/images/logo-side.png" class="img-fluid mx-auto d-block">
+                            <p class="font-16 w-100 text-center">Incredible ways to increase your income while maintaining satisfaction and risk free login now.</p>
+                        </aside>
+                        <article class="">
+                            <p>Don`t have a sponsor to register use default sponsor Onecryptobox</p>
+                            <fieldset class="the-fieldset">
+                                <legend class="the-legend">REGISTRATION</legend>
+                                <form class="custom-form" action="" method="post" name="login">
+                                <ul class="registration-form">
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Sponsor<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Username <sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>First Name<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Last Name<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Email<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Phone Number<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Create Login Password<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Create Wallet Password<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="noadd form-group">
+                                            <label>Country<sapn class="red"> *</sapn></label>                              
+                                            <input type="text" name="username" required class="form-control" >                  
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-group">
+                                            <div class="checkbox-section">
+                                                <label for="c1">
+                                                <input type="checkbox" id="c1">
+                                                <span class="label-text">I agree to the terms and conditions.</span>
+                                                </label>
+                                             </div>               
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <div class="w-100 text-center mt-3">
+                                <input type="submit" anme="submit" value="Submit" class="btn btn-login"> 
+                            </div>
+                                </form>
+                                
+                                <p class="account w-100 text-center">Already have an account ? <a href="login.html">log in</a></p>
+                            </fieldset>    
+                        </article>
+                    </section>
+                  </div>
+                 
+                  
+                  
+              </div>
+          </div>
+      </main>
+      
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //$(".noadd .form-control").click(function () {
+            //    $(this).parent().addClass("label-animate");
+            //});
+            //if ($('input:-webkit-autofill')) {
+            //    $(this).parent().addClass("label-animate");
+            //}
+
+            //$(window).click(function () {                
+            //    if (!$(event.target).is('.noadd .form-control')) {
+            //        $(".noadd .form-control").each(function () {
+            //            if ($(this).val() == '') {
+            //                $(this).parent().removeClass("label-animate");
+            //            }
+                        
+            //        });
+            //    }
+            //});
+            $(".noadd .form-control").click(function () {
+                $(this).parent().addClass("label-animate");
+            });
+
+            $("input").keyup(function () {
+                if ($(this).val() == '') {
+                    $(this).parent().removeClass("label-animate");
+                } else {
+                    $(this).parent().addClass("label-animate");
+                }
+            });
+
+            $("#txtUserName").on("input", function () {
+                if ($(this).val() == '') {
+                    $(this).parent().removeClass("label-animate");
+                } else {
+                    $(this).parent().addClass("label-animate");
+                }
+            });
+            $("#txtPassword").on("input", function () {
+                if ($(this).val() == '') {
+                    $(this).parent().removeClass("label-animate");
+                } else {
+                    $(this).parent().addClass("label-animate");
+                }
+            });
+
+            console.log("ready!");
+            if ($(window).width() > 768) {
+            function placeFooter() {
+                if ($(document.body).height() < $(window).height()) {
+                    $(".footer").css({ position: "absolute", bottom: "0px" });
+                } else {
+                    $(".footer").css({ position: "" });
+                }
+            }
+            placeFooter();
+            }
+
+        });
+    </script>
+   
+  </body>
+</html>

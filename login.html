@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
+
+    <title></title>
+  </head>
+  <body class="bg-login"> 
+      <main class="d-flex h-100 align-items-center">
+          <div class="container">
+              <div class="row ">
+                  <div class="col-sm-6 bg-leftside">
+                      <p class="font-24 w-100 text-center">Welcome</p>
+                      <img src="assets/images/logo-side.png" class="img-fluid mx-auto d-block">
+                      <p class="font-24 w-100 text-center">Cryptobox</p>
+                  </div>
+                  <div class="col-sm-6 bg-rightside">
+
+                    <fieldset class="the-fieldset">
+                        <legend class="the-legend">TRADING SIGN IN</legend>
+
+                        <form class="custom-form form-group-padd" action="" method="post" name="login">
+
+                            
+                            <div class="noadd form-group">
+                                <label>Username</label>                              
+                                <input type="text" name="username" required class="form-control" >                  
+                            </div>
+
+                            <div class="noadd form-group">
+                                <label>password</label>                                    
+                                <input type="password" name="password" required class="form-control" > 
+                                                                    
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="add form-group">
+                                    <label>Image Captcha </label>
+                                    <div class="imgtext">                                        
+                                        <img alt="Capcha" src="Captcha.aspx" class="mx-auto d-block">
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-2">
+                                    
+                                    <a href="javascript:void();" class="btn-refresh">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="30" viewBox="0 0 42 30">
+                                            <g id="noun-refresh-1051637" transform="translate(-105 -105)">
+                                              <path id="Path_5054" data-name="Path 5054" d="M288.329,120a15.017,15.017,0,0,0-15-15,14.8,14.8,0,0,0-7.188,1.917l3.621,4.827A8.987,8.987,0,0,1,282.329,120h-6l9,12,9-12Z" transform="translate(-147.329)" fill="#fff"/>
+                                              <path id="Path_5055" data-name="Path 5055" d="M126,161a9.011,9.011,0,0,1-9-9h6l-9-12-9,12h6a15.017,15.017,0,0,0,15,15,14.8,14.8,0,0,0,7.188-1.917l-3.621-4.827A8.948,8.948,0,0,1,126,161Z" transform="translate(0 -32)" fill="#fff"/>
+                                            </g>
+                                          </svg>                                          
+                                    </a>
+                                </div>
+                                <div class="col-5">
+                                    <div class="noadd form-group">
+                                    <label>password</label> 
+                                    <input type="text" class="form-control" required id="captcha_code" name="captcha_code">
+                                </div>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <input type="submit" anme="submit" value="Submit" class="btn btn-primary w-100 btn-block btn-login"> 
+                            </div>    
+                        </form>
+
+                        <p class="account w-100 text-center">Don't have an account? <a href="registration.html">Register here</a></p>
+                            <a href="" class="w-100 text-center forgetpwd">Forgot Password</a>
+                    </fieldset>
+                  </div>
+                  
+              </div>
+          </div>
+      </main>
+      
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            //$(".noadd .form-control").click(function () {
+            //    $(this).parent().addClass("label-animate");
+            //});
+            //if ($('input:-webkit-autofill')) {
+            //    $(this).parent().addClass("label-animate");
+            //}
+
+            //$(window).click(function () {                
+            //    if (!$(event.target).is('.noadd .form-control')) {
+            //        $(".noadd .form-control").each(function () {
+            //            if ($(this).val() == '') {
+            //                $(this).parent().removeClass("label-animate");
+            //            }
+                        
+            //        });
+            //    }
+            //});
+            $(".noadd .form-control").click(function () {
+                $(this).parent().addClass("label-animate");
+            });
+
+            $("input").keyup(function () {
+                if ($(this).val() == '') {
+                    $(this).parent().removeClass("label-animate");
+                } else {
+                    $(this).parent().addClass("label-animate");
+                }
+            });
+
+            $("#txtUserName").on("input", function () {
+                if ($(this).val() == '') {
+                    $(this).parent().removeClass("label-animate");
+                } else {
+                    $(this).parent().addClass("label-animate");
+                }
+            });
+            $("#txtPassword").on("input", function () {
+                if ($(this).val() == '') {
+                    $(this).parent().removeClass("label-animate");
+                } else {
+                    $(this).parent().addClass("label-animate");
+                }
+            });
+
+            console.log("ready!");
+            if ($(window).width() > 768) {
+            function placeFooter() {
+                if ($(document.body).height() < $(window).height()) {
+                    $(".footer").css({ position: "absolute", bottom: "0px" });
+                } else {
+                    $(".footer").css({ position: "" });
+                }
+            }
+            placeFooter();
+            }
+
+        });
+    </script>
+   
+  </body>
+</html>
