@@ -66,10 +66,11 @@
 
 
 .the-fieldset {           
-    padding: 0px 10px 10px;
+    padding: 5px 10px 10px;
     border: 2px solid #ffffff;   
     border-radius: 4px;  
-    margin-top: 20px;         
+    margin-top: 25px;
+	position:relative;         
 }
 .the-legend {    
     border-style: none;
@@ -85,8 +86,8 @@
     background: #FFAE00;
     color: #ffffff;
     text-transform: uppercase;
-	position: relative;
-    top:-15px;
+	position: absolute;
+    top:-20px;
 } 
 .custom-form .form-group{	
 	
@@ -364,16 +365,92 @@ ul.registration-form li:nth-child(even) {
     }
   }
 
-@media (max-width: 575.98px) { }
+@media (max-width: 575.98px) {
+	.registration aside{
+		width: 100%;
+	}
+	.registration article {
+		width: 100%;
+		float: left;
+		padding: 20px 10px;		
+	}
+	.checkbox-section {
+		display: block;
+		margin-top: 19px;
+	}
+	.welcomebox img{
+		height: 140px;
+	}
+	.bg-leftside img{
+		height: 150px;
+	}
+ }
 
 
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.registration aside{
+		width: 100%;
+	}
+	.registration article {
+		width: 100%;
+		float: left;
+		padding: 20px 10px;		
+	}
+	.welcomebox img{
+		height: 140px;
+	}
+}
 
 
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) {  
+	.registration aside {
+		width: 250px;
+		min-height: 642px;		
+	}
+	.registration article {
+		width: calc(100% - 250px);		
+		padding: 20px 10px;		
+	}
+	.registration-form .form-group label{
+		font-size: 0.75rem;
+	}
+	.registration-form .form-control{
+		font-size: 0.75rem;
+	}
+    .form-group.label-animate > label{
+		font-size: 0.75rem;
+	}
+	.noadd.form-group.label-animate > label {	
+		font-size: 0.75rem;	
+		padding: 2px 5px;
+		border-radius: 2px;
+	}
+	.label-text {
+		font-size: 0.75rem;
+		color: #f2f2f2;
+		position: relative;
+		top: -4px;
+	}
+	.welcomebox img{
+		height: 180px;
+	}
+	.bg-leftside img{
+		height: 250px;
+	}
+
+}
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	.registration aside {
+		width: 275px;
+		min-height: 615px;		
+	}
+	.registration article {
+		width: calc(100% - 275px);		
+		padding: 20px 15px;		
+	}
+}
 
 
 @media (min-width: 1200px) { 
@@ -416,6 +493,27 @@ ul.registration-form li:nth-child(even) {
 		min-height: 650px;
 	}
 
-	
-
  }
+
+ .myselect {
+	position: relative;
+	display: block;
+  }
+  .myselect select {
+	height: 50px;
+	border-color: #d5940a;
+	padding-right: 10px;
+	outline: none;
+  }
+  .myselect::after {
+	content: '';
+    position: absolute;
+    right: 9px;
+    top: 45px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #d5940a;
+    pointer-events: none;
+  }
