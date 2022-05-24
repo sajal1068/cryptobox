@@ -2049,7 +2049,8 @@ ul.top-divided-section{
 	justify-content:start;
 }
 .goog-te-gadget .goog-te-combo{
-	width:160px!important;
+	max-width:160px;
+	width: 100%;
 }
 .top-divided-section .btn-rounded{
 	padding: 7px 15px;
