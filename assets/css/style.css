@@ -1385,7 +1385,7 @@ p.mainheading{
 	cursor: pointer;
 	position: absolute;
 	top: 2.25em;
-	top:-8px;
+	top:8px;
 	right: 2.25em;
 	z-index: 110;
 	border-radius: 50%;
@@ -1668,6 +1668,85 @@ p.mainheading{
 	  text-align: center;
 	}
   }
+
+  ul.top-divided-section{
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: end;
+    float: right;  
+}
+
+  ul.top-divided-section li{
+	display:inline-block;
+	margin-right: 5px;
+  }
+
+                .goog-te-banner
+                {
+                  display: none;
+                }
+                .goog-te-banner-frame
+                {
+                  display: none;
+                }
+                .goog-logo-link
+                {
+                  display: none;
+                }
+                .goog-text
+                {
+                  display: none;
+                }
+                .goog-te-gadget
+                {
+                  color: transparent!important;
+				  
+                }
+                .skiptranslate
+                {
+
+                    margin-top: 15px!important; 
+                }
+                #goog-gt-tt
+                {
+                    display: none;
+                }
+
+                #goog-gt-tt .logo {
+                    display: none;
+                }
+                .goog-tooltip
+                {
+                    display: none;
+                }
+               .goog-te-combo {
+					border: 2px solid #fff;
+					background-color: #ffae00;
+					padding: 7px 15px;
+					border-radius: 25px;
+					color: #fff;
+					font-style: inherit;
+					font-family: 'Poppins'!important;
+					font-size: 18px!important;
+					outline: none;
+					font-variant: all-petite-caps;
+				}
+				.goog-te-gadget {	
+					color: transparent!important;
+					white-space: nowrap;
+					font-size: 18px;
+				}
+				select option {
+					
+					background: rgba(0, 0, 0, 0.9);					
+					text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+				}
+                .goog-te-banner-frame {display:none !important}
+               
 @media (max-width: 575.98px) { 
 	.footer .headings {		
 		margin-top: 15px;
@@ -1953,6 +2032,24 @@ align-items: center;
 	top:-1px;
 }
 
+ul.top-divided-section{
+	justify-content:start;
+}
+.goog-te-gadget .goog-te-combo{
+	width:160px!important;
+}
+.top-divided-section .btn-rounded{
+	padding: 7px 15px;
+	font-size: 14px;
+}
+.goog-te-combo {	
+	padding: 3px 12px;
+	border-radius: 25px;	
+	font-size: 18px !important;
+	outline: none;
+	font-variant: all-petite-caps;
+  }
+
 /* .banner{	
 	height:100vh;
 } */
@@ -2082,6 +2179,9 @@ align-items: center;
 	.banner{
 		height:100vh;
 	
+	}
+	.goog-te-gadget .goog-te-combo{
+		width:160px!important;
 	}
 	
 }
@@ -2228,6 +2328,10 @@ align-items: center;
 	  .banner{
 		padding-bottom: 50px;	
 	  }
+
+	  ul.top-divided-section{			
+		margin-right: 96px;
+	}
 	
 }
 
@@ -2320,6 +2424,9 @@ align-items: center;
 		height:100vh;
 
 	}
+	ul.top-divided-section{			
+		margin-right: 96px;
+	}
 }
 
 
@@ -2379,6 +2486,10 @@ align-items: center;
 	.banner{
 		
 	padding-bottom: 50px;
+	}
+
+	ul.top-divided-section{			
+		margin-right: 96px;
 	}
 
  }

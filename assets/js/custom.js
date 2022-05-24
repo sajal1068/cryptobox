@@ -1,3 +1,4 @@
+jQuery('#google_translate_element').text().replace('Powered by ', '');
         // acrodian 
         // When any accordion title is clicked...
 		$(".accordionTitle").click(function() {
